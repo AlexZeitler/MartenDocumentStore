@@ -26,6 +26,7 @@ It contains
 yarn install
 cd src/MartenDocumentStore
 yarn install
+libman restore
 ```
 
 #### Development
