@@ -1,10 +1,10 @@
-using AspNetCoreMvcHtmx.Models;
+using MartenDocumentStore.Models;
 using Easy_Password_Validator;
 using Easy_Password_Validator.Models;
 using Microsoft.AspNetCore.Mvc;
-using static AspNetCoreMvcHtmx.Controllers.Constants;
+using static MartenDocumentStore.Controllers.Constants;
 
-namespace AspNetCoreMvcHtmx.Controllers;
+namespace MartenDocumentStore.Controllers;
 
 public class RegistrationController : Controller
 {

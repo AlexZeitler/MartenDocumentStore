@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using AspNetCoreMvcHtmx.Models;
+using MartenDocumentStore.Models;
 
-namespace AspNetCoreMvcHtmx.Controllers;
+namespace MartenDocumentStore.Controllers;
 
 public class HomeController : Controller
 {

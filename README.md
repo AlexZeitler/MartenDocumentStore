@@ -24,7 +24,7 @@ It contains
 
 ```
 yarn install
-cd src/AspNetCoreMvcHtmx
+cd src/MartenDocumentStore
 yarn install
 ```
 
@@ -64,18 +64,18 @@ HTMX usage is shown on the Registration view, even the password strength indicat
 
 Of course, you want to rename the projects files to match our needs.
 
-You can use these commands, e.g. `AspNetCoreMvcHtmx`  gets renamed to `MyApp`:
+You can use these commands, e.g. `MartenDocumentStore`  gets renamed to `MyApp`:
 
 ### Rename all references inside the files
 
 ```bash
-LC_ALL=C find . -type f -name '*.*' -not \( -path './node_modules/*' -o -path './src/AspNetCoreMvcHtmx/node_modules/*' -o -path './assets' \) -exec sed -i '' 's|AspNetCoreMvcHtmx|MyApp|g' {} \;
+LC_ALL=C find . -type f -name '*.*' -not \( -path './node_modules/*' -o -path './src/MartenDocumentStore/node_modules/*' -o -path './assets' \) -exec sed -i '' 's|MartenDocumentStore|MyApp|g' {} \;
 ```
 
 ### Rename files and folders
 
 ```bash
-find . -depth -name "*AspNetCoreMvcHtmx*" | \
-while IFS= read -r ent; do mv $ent ${ent%AspNetCoreMvcHtmx*}MyApp${ent##*AspNetCoreMvcHtmx}; done
+find . -depth -name "*MartenDocumentStore*" | \
+while IFS= read -r ent; do mv $ent ${ent%MartenDocumentStore*}MyApp${ent##*MartenDocumentStore}; done
 
 ```
