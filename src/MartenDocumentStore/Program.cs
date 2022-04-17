@@ -1,6 +1,10 @@
+using Marten;
+using MartenDocumentStore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddMarten(options => { options.Connection(builder.Configuration.GetConnectionString("DocumentStore")); });
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

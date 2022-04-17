@@ -1,4 +1,4 @@
-namespace AspNetCoreMvcHtmx.Controllers;
+namespace MartenDocumentStore.Controllers;
 
 public static class Constants
 {
